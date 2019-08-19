@@ -26,6 +26,7 @@ github_username:  fabiancz
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-google-photos
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
