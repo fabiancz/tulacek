@@ -17,7 +17,7 @@ title: Tuláček
 email: lukas@tulaci.cz
 description: >- # this means to ignore newlines until "baseurl:"
   Oddíl Tuláček je součástí turisticko-vodáckého oddílu Tuláci pro mladší děti.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/tulacek" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: fabiancz
 github_username:  fabiancz

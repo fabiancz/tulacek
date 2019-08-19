@@ -56,7 +56,7 @@ layout: default
             <h3>Fotogalerie</h3>
             <ul>
             {% for gallery in site.photos %}
-              <li><a href="{{ gallery.url }}">📷 {{ gallery.name }}</a></h2>
+              <li><a href="{{ gallery.url | prepend:site.baseurl }}">📷 {{ gallery.name }}</a></h2>
             {% endfor %}
             </ul>
 
