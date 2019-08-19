@@ -1,57 +1,6 @@
-<!doctype html>
-<html lang="cs">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-    <title>Tuláček</title>
-
-    <style>
-      html, body {
-        background-color: white;
-        color: black;
-      }
-      header {
-        margin: 1em;
-      }
-      h1 {
-        text-align: center;
-      }
-      a {
-        color: #56941c;
-      }
-      .mt {
-        margin-top: 1em;
-      }
-      .mb {
-        margin-bottom: 1em;
-      }
-      .btn-primary {
-        background-color: #56941c;
-        border-color: #56941c;
-      }
-      .btn-facebook {
-        background-color: #3b5998;
-        border-color: #3b5998;
-      }
-      .btn-white {
-        background-color: white;
-        border-color: white;
-        color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1 class="text-hide">
-          Tuláček
-          <img src="./img/tulacek.png" class="img-fluid">
-        </h1>
-      </header>
+---
+layout: default
+---
 
       <div class="row">
         <div class="col-md-8">
@@ -106,6 +55,12 @@
           <div>
             <h3>Fotogalerie</h3>
             <ul>
+            {% for gallery in site.photos %}
+              <li><a href="{{ gallery.url }}">📷 {{ gallery.name }}</a></h2>
+            {% endfor %}
+            </ul>
+
+            <!-- <ul>
               <li>
               	<a href="/foto/20190720-tabor">📷 19.-21. července tábor v Rosovicích</a>
           	  </li>
@@ -127,7 +82,7 @@
               <li>
                 <a href="/foto/20180311-vylet">📷 3.11.2018 - výlet do lesa 🌲</a><br>
               </li>
-            </ul>
+            </ul> -->
           </div>
           <div class="mt">
             <h3 id="kontakty" name="kontakty">Kontakty 📞</h3>
@@ -144,10 +99,3 @@
           <img src="./img/TNT.jpg" alt="Tulácká Nováčkovská Třicítka" class="img-fluid">
         </div>
       </div>
-
-      <footer>
-        <p class="text-center"></p>
-      </footer>
-    </div>
-  </body>
-</html>
